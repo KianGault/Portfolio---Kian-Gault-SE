@@ -1,4 +1,4 @@
-Setup - Week 2 Kian Gault 
+## Setup - Week 2 Kian Gault 
 
 
 ![Personal Portfolio image](images/Portfolio_Setup_KG.png.png)
