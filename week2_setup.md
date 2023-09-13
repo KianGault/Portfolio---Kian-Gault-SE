@@ -20,6 +20,13 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 ![Clone repository in VS2022 Step 2](images/vs2022_clone_repository_step2_kg.png)
 
+- When you click on the GitHub option you are brought to this screen:
+
+![Clone repository in VS2022 Step 3](images/vs2022_clone_repository_step3_kg.png)
+
+- As you can see all your repositories for your account are displayed. 
+- Simply pick the respository you wish to clone then press the clone button. 
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
