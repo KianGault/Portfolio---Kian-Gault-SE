@@ -27,6 +27,11 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 - As you can see all your repositories for your account are displayed. 
 - Simply pick the respository you wish to clone then press the clone button. 
 
+- The screenshot below shows the respository cloned onto your visual studio environment
+- This is a local respository meaning you can edit the files within it without changing the cloud version
+
+![Clone repository in VS2022 Step 4](images/vs2022_clone_repository_step4_kg.png)
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
