@@ -12,7 +12,7 @@ entry with a brief introduction because the reader may not be aware of the conte
 
 ## Contents
 
-hi 
+
 
 1. [Setup](week2_setup.md)
 2. [Workflow](week3_workflow.md)
