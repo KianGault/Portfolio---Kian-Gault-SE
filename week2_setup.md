@@ -1,7 +1,7 @@
 # Setup
 
 
-! [] (images/Personal_Portfolio_Setup_KG.png)
+![Personal Portfolio image](images/Portfolio_Setup_KG.png.png)
 
 
 
