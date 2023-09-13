@@ -1,38 +1,15 @@
-# Setup
+## Setup - Kian Gault 
 
-This section documents your practical work in week 2.
-
-The main requirements are to show that:
-
-1. Your development environment is correctly set up
-2. You understand the setup including potential alternative configuration settings
+This file serves as evidence of my setup configurations for Week 2 of the Software Engineering Module. 
 
 ## Environment configuration
 
-Here, you should include appropriate screenshots with additional commentary. 
+<ins> Personal Portfolio Setup <ins>
 
-**DO**
-
-* Place your image files in the `images` folder
-* Choose your screenshots carefully so that they communicate the appropriate information.
-  Many screenshots with no clear purpose or with trivial differences are of little value.
-* Provide <ins>descriptive</ins> commentary to explain why the screenshot is included. 
-  what it shows and point out any particularly significant details.
-* Modify your screenshots - for example, by adding arrows, outlines or other highlighting 
-  techniques - to enhance their communication value.
-* Remove unnecessary material from your screenshots such as toolbars, other windows and 
-  computer desktop to eliminate distractions.
-* Ensure that any important content is clearly legible. Pay particular attention to text
-  size and image resolution.
-* Use [numbered captions](https://towardsdev.com/3-ways-to-add-a-caption-to-an-image-using-markdown-f2ca30562be6) 
-  as labels for images. Also, use the caption numbers to refer to images in your text.
-
-**DON'T**
-
-* Expect the reader to understand your reasons for including a screenshot. If you can't
-  explain it, the screenshot will not do the job on its own.
-* Include self-evident comments. For example, don't simply list the values used on a
-  configuration page if those values are clearly visible in the screenshot.
+![Personal Portfolio Page](Portfolio_Setup_KG.png.png)
+- This image shows my own repository. 
+- I achieved this by pressing the <ins> + <ins> arrow to create a new respository. 
+- Instead of creating a repository from scratch i copied the template repository provided by cloning the existing repostory.
 
 ## Reflection
 
