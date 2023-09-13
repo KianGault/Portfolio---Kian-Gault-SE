@@ -10,7 +10,7 @@ show to a potential employer in the future. Consider what that kind of reader ne
 you in terms of presentation. It will be a good idea, for example, to start each portfolio
 entry with a brief introduction because the reader may not be aware of the context.
 
-## Contents
+## Contentsb Hi 
 
 1. [Setup](week2_setup.md)
 2. [Workflow](week3_workflow.md)
