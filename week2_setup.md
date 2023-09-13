@@ -10,6 +10,9 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 - This image shows my own repository. 
 - I achieved this by pressing the <ins>+</ins> arrow to create a new respository. 
 - Instead of creating a repository from scratch i copied the template repository provided by cloning the existing repostory.
+- Lastly i then clone this repository to a local Virtual Studio repository as shown in the image below.
+
+![Clone repository in VS2022 Step 1](images/vs2022_clone_repository_step1_kg.png)
 
 ## Reflection
 
