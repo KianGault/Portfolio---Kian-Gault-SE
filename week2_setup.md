@@ -14,6 +14,12 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 ![Clone repository in VS2022 Step 1](images/vs2022_clone_repository_step1_kg.png)
 
+- Next we are brought to this screen and we can select the GitHub tab for quicker access to the GitHub repository linke
+- <ins> Note: You have to be logged into your GitHub account on Visual Studio for this option <ins> 
+- Alternatively you can just copy the url of your GitHub repository 
+
+![Clone repository in VS2022 Step 2](images/vs2022_clone_repository_step2_kg.png)
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
