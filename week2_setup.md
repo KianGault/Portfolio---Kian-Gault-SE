@@ -6,7 +6,7 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 <ins> Personal Portfolio Setup <ins>
 
-![Personal Portfolio Page](Portfolio_Setup_KG.png.png)
+![Personal Portfolio Page](images/Portfolio_Setup_KG.png.png)
 - This image shows my own repository. 
 - I achieved this by pressing the <ins> + <ins> arrow to create a new respository. 
 - Instead of creating a repository from scratch i copied the template repository provided by cloning the existing repostory.
