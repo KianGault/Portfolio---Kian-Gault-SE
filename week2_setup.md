@@ -32,6 +32,21 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 ![Clone repository in VS2022 Step 4](images/vs2022_clone_repository_step4_kg.png)
 
+
+<ins> Creating a shared GitHub repository for the team <ins> 
+
+- For this we discussed among ourselves and naturally some of us became leaders and set up a repository
+- We then gathered every email of our team members then sent out invites to the created repository
+- Once invited we all had to personally clone the respository to our local visual studio machine
+
+- Below we can see the shared repository 
+
+# ![Clone repository in VS2022 Step 4](images/vs2022_clone_repository_step4_kg.png)
+
+- Below is my own cloned version of our shared repository 
+
+# ![Clone repository in VS2022 Step 4](images/vs2022_clone_repository_step4_kg.png)
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
