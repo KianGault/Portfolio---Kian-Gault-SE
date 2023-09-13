@@ -41,11 +41,11 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 - Below we can see the shared repository 
 
-# ![Clone repository in VS2022 Step 4](images/vs2022_clone_repository_step4_kg.png)
+![GitHub shared repository](images/green_team_repository_github_kg.png)
 
 - Below is my own cloned version of our shared repository 
 
-# ![Clone repository in VS2022 Step 4](images/vs2022_clone_repository_step4_kg.png)
+![GitHub shared repository cloned](images/green_team_repository_cloned_kg.png)
 
 ## Reflection
 
