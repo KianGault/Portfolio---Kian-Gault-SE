@@ -64,23 +64,14 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 ![VS2022 config](images/VS2022_config_KG.png)
 
 
-## Reflection
 
-For this section, decide what points are worth making and structure your content 
-appropriately.
 
-**DO**
+## Reflection - Using Github
 
-* Use sub-headings to differentiate between sections
-* Provide <ins>reflective</ins> commentary that discusses, for example, limitations of
-  your current configuration, how your configuration is appropriate for the current 
-  project, alternative configuration that might be appropriate in ther circumstances, 
-  etc.
-* Mention any difficulties you had setting up your working environment and how you 
-  resolved them
+- Learning how to use Github was a new experiance for me as i had never needed to use it during my time at college. 
+- I enjoyed learning this as i can see the value in using this during my course plus using it during my future career
 
-**DON'T**
+- My team helped me a lot with getting setup then i made use of the internet to fill in the gaps. 
 
-* Repeat the descriptive commentary from point 1
-* Give a blow-by-blow account of everything you did. Instead, you should highlight 
-  the important points.
+- I feel i have a good understanding of how local repositories work and how to "push" and "pull". 
+- I will still want to learn more and as i should as the the career i want to enter is a colaborative industry so GitHub will help me. 
