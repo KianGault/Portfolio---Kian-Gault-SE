@@ -61,6 +61,8 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 <ins>Making sure Visual Studio 2022 is installed correctly with .Net MAUL apps<ins>
 
+![VS2022 config](images/VS2022_config.png)
+
 
 ## Reflection
 
