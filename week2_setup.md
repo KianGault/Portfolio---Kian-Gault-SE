@@ -47,6 +47,10 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 ![GitHub shared repository cloned](images/green_team_repository_cloned_kg.png)
 
+- As a team we created a folder called documentation and then created a file called setup.md with this weeks instructions inside
+
+![GitHub shared repository cloned](images/setup_completed_kg.png)
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
