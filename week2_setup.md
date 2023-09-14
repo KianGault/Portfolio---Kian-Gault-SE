@@ -56,7 +56,7 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 - We created a new project in our shared repository and with that a task board 
 - for this week we set our tasks as the week 2 practical objectives 
 
-
+![GitHub shared repository project/task board](images/team_project_kg.png)
 
 ## Reflection
 
