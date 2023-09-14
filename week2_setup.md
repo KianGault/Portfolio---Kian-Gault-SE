@@ -58,6 +58,10 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 ![GitHub shared repository project/task board](images/team_project_kg.png)
 
+
+<ins>Making sure Visual Studio 2022 is installed correctly with .Net MAUL apps<ins>
+
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
