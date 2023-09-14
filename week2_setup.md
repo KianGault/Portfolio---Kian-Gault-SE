@@ -51,6 +51,13 @@ This file serves as evidence of my setup configurations for Week 2 of the Softwa
 
 ![GitHub shared repository cloned](images/setup_completed_kg.png)
 
+<ins>Setting up a project in GitHub with an integrated task board<ins>
+
+- We created a new project in our shared repository and with that a task board 
+- for this week we set our tasks as the week 2 practical objectives 
+
+
+
 ## Reflection
 
 For this section, decide what points are worth making and structure your content 
