@@ -15,6 +15,7 @@ After this was achieved we all selected an issue to work on.
 <ins> my chosen issue moved to the in progress tab <ins>
 
 ![Team Project Board in progress list](images/Week_3_Images/selected_issue.png)
+
 As you can see in the image i selected the issue to add the data of values of roles 
 to the database. 
 
