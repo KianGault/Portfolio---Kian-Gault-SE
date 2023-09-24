@@ -1,50 +1,66 @@
-# Workflow
-
-This section documents your practical work in week 3.
-
-The main requirements are to show that:
-
-1. You know how to use the workflow tools in GitHub
-2. You have successfully carried out the required operations which are:
-   * Accept a task from the project backlog
-   * Update the task information appropriately
-   * Update the task board appropriately
-   * Complete the development task on a feature branch
-   * Commit your changes with appropriate comments
-   * Check your work against the Definition of Done (DoD)
-   * Make a pull request
-
+# Workflow 
 ## Task workflow
 
-Here, you should use screenshots and descriptive commentary to show that the required
-have been completed successfully.
+As a team, we have decided to use the Github flow. 
 
-**DO**
+To do this we have a project board and our list of issues for the week. We imported this from the template and uploaded each issue
+to the to-do section of our board. 
 
-* Consider the layout of your content from the point of view of the reader. Many raw
-  screenshots will take up a lot of space. It may be better to adopt a different strategy
-  such as
-  * Using thumbnails with links to full-size images
-  * Combining two or more screenshots into a single image 
-  * Using partial screenshots to highlight only the important information
-  * etc.
-* Provide links to the actual objects (e.g. task, pull request, etc.) in the team project
-  in GitHub
-* Read through your work to make sure that the information comes across clearly
+<ins> To do section of our project board <ins>
+![Team Project Board to do list](images/Week_3_images/project_board_to_do_section.png)
 
-**DON'T**
+After this was achieved we all selected an issue to work on. 
 
-* Use humour or informal language
-* Waste space with trivial or self-evident commentary
-* Abbreviate your commentary using (e.g. by using bullet points). Your text should be in
-  the form of grammatically correct sentences.
+<ins> my chosen issue moved to the in progress tab <ins>
+
+![Team Project Board in progress list](images/Week_3_images/selected_issue.png)
+As you can see in the image i selected the issue to add the data of values of roles 
+to the database. 
+
+To show this to my team i assigned myself to the issue and moved the issue from 
+the to-do section to the in progress section. 
+
+To begin work on my own issue i had to create a new branch so i wouldn't conflict 
+our main app branch. 
+
+To do this i simply changed my targeted remote from main to a new branch i called
+"Kian's branch". 
+
+<ins> my created branch shown in visual studio <ins> 
+
+![independant branch](images/Week_3_images/own_branch.png)
+
+<ins> my created branch on GitHub <ins> 
+
+![Github Branch view](images/Week_3_images/own_branch_Github.png)
+
+Having this branch allows me to make changes to our app without changing the 
+main branch app so if anything was to go wrong only my branch will be effected.
+
+<ins> completing the issue <ins> 
+
+Due to development issues in our team we were unable to get a working main 
+application in time of our set deadline so we weren't able to implement our own
+branches to finish our issues. 
+
+The logic side of finishing our issues were discussed at length for future 
+development but first we have to get the main branch working before we can 
+implement feature branches. 
+
+To finish this issue i would simply need to make a new data class in our app
+and change the base map of the variables to match my own issues data. This 
+will hopefully be added to our main branch in due time. 
 
 ## Reflection
 
-Here, you should highlight any difficulties that you faced in completing the task, and
-how you resolved them.
+This week was the first time our team came across issues in our communication. 
+We all seemed lost on what was needed to be done and planning meetings became
+a challenge. 
 
-You should also briefly discuss the current process and how it could be refined or
-improved in future iterations. For example, is the DoD adequate or too onerous? Is the
-current procedure for updating the task appropriate? Is the task board configured to
-work in an intuitive way?
+A method we have decided to fix this issue is during our next stand up meeting 
+we are going to identify each members strengths and weaknesses. This will help 
+us allocate issues to the best choice so no one is out of their depth. 
+
+We have also discussed the possibility of a planned a second stand up meeting later 
+in the week so no one is left stuck for long. 
+
