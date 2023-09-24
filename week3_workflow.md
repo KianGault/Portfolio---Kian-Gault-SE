@@ -34,7 +34,7 @@ To do this i simply changed my targeted remote from main to a new branch i calle
 
 <ins> my created branch on GitHub <ins> 
 
-![Github Branch view](images/Week_3_Images/own_branch_Github.png)
+![Github Branch view](images/Week_3_Images/own_branch_GitHub.png)
 
 Having this branch allows me to make changes to our app without changing the 
 main branch app so if anything was to go wrong only my branch will be effected.
