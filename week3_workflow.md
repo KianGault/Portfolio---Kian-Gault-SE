@@ -7,13 +7,13 @@ To do this we have a project board and our list of issues for the week. We impor
 to the to-do section of our board. 
 
 <ins> To do section of our project board <ins>
-![Team Project Board to do list](images/Week_3_images/project_board_to_do_section.png)
+![Team Project Board to do list](images/Week_3_Images/project_board_to_do_section.png)
 
 After this was achieved we all selected an issue to work on. 
 
 <ins> my chosen issue moved to the in progress tab <ins>
 
-![Team Project Board in progress list](images/Week_3_images/selected_issue.png)
+![Team Project Board in progress list](images/Week_3_Images/selected_issue.png)
 As you can see in the image i selected the issue to add the data of values of roles 
 to the database. 
 
@@ -28,11 +28,11 @@ To do this i simply changed my targeted remote from main to a new branch i calle
 
 <ins> my created branch shown in visual studio <ins> 
 
-![independant branch](images/Week_3_images/own_branch.png)
+![independant branch](images/Week_3_Images/own_branch.png)
 
 <ins> my created branch on GitHub <ins> 
 
-![Github Branch view](images/Week_3_images/own_branch_Github.png)
+![Github Branch view](images/Week_3_Images/own_branch_Github.png)
 
 Having this branch allows me to make changes to our app without changing the 
 main branch app so if anything was to go wrong only my branch will be effected.
