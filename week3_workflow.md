@@ -7,6 +7,7 @@ To do this we have a project board and our list of issues for the week. We impor
 to the to-do section of our board. 
 
 <ins> To do section of our project board <ins>
+
 ![Team Project Board to do list](images/Week_3_Images/project_board_to_do_section.png)
 
 After this was achieved we all selected an issue to work on. 
