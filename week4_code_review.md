@@ -33,7 +33,7 @@ actually not needed at all(Line 6-9). We could simply set the model variable the
 From this we could remove the constructor and reduce complexity. 
 
 Third: In this code snippet we can see the use of short comments(Line 5, Line 8). They aren't bad comments but they are 
-also unnecessary in this example. The need to tell the reviewer that this is a class conctructor or this is us setting the 
+also unnecessary in this example. The need to tell the reviewer that this is a class constructor or this is us setting the 
 model variable a value is not needed because programmers can easily tell what a constructor is or what a equals syntax does. 
 
 Fourth: The naming of variables/instances are confusing when looking at just the code snippet as the instance is called "Ford"
