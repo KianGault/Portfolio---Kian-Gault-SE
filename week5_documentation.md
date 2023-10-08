@@ -1,17 +1,246 @@
 # Documentation
 
-This section is related to your work on clean code and documentation in week 5.
+## Code from week 3 issue - sample code is from the database manager class 
+```
+internal class RoleTypeManager
+    {
+        private DatabaseManager databaseManager;
+        private SQLiteConnection connection;
 
-First, choose six rules of clean code and explain them. For each one,
+        public RoleTypeManager()
+        {
+            databaseManager = new DatabaseManager(); # connects to the base/main database manager class
+            connection = databaseManager.DBconn();
+            connection.CreateTable<RoleType>(); # creates new sqlite table 
+        }
 
-* Summarise the rule in your own words.
-* Provide an example from the code that you wrote in week 2 and then refined in week 4.
-* Explain how your code implements the rule. 
+        public void AddRole(string role)
+        {
+            var newRoleType = new RoleType { Role = role};
+            connection.Insert(newRoleType); # uses sqlite to insert new value
+        }
 
-Second, copy the doxygen comments from your code into your portfolio and provide some 
-descriptive commentary on their purpose and structure. Use screenshots showing the HTML 
-content that is generated from your code to illustrate your explanation.
+        public void UpdateRole(int id, string newRole)
+        {
+            var roleToUpdate = connection.Table<RoleType>().FirstOrDefault(b => b.Id == id);
+            if (roleToUpdate != null)
+            {
+                roleToUpdate.Role = newRole;
+                connection.Update(roleToUpdate);
+            }
 
-Finally, highlight three examples from your code where you have eliminated the need
-for comments by adhering to the principles of clean code.
- 
+        }
+
+        public void DeleteRole(int id)
+        {
+            var roleToDelete = connection.Table<RoleType>().FirstOrDefault(b => b.Id == id);
+            if (roleToDelete != null)
+            {
+                connection.Delete(roleToDelete);
+            }
+        }
+
+        public List<RoleType> GetAllRoles()
+        {
+            return connection.Table<RoleType>().ToList();
+        }
+
+        public void CloseConnection()
+        {
+            connection.Close();
+        }
+```
+
+## Clean Code Rule #1 - Use of meaningful names
+The use of meaningful names is important for coding because the names should explain the purpose/function of that object.
+Without meaningful names the object in itself isn't meaningful. It can also be confusing to any external development as they 
+won't understand what the object does. 
+
+Example: 
+```
+public void AddRole(string role)
+{
+     var newRoleType = new RoleType { Role = role};
+     connection.Insert(newRoleType); # uses sqlite to insert new value
+}
+```
+
+In this example you can see i gave the method a meaningful name. It clearly explains what the method does which is adding a new 
+role type to the database. The parameter takes in a string called role and this is stored in a var called roleType. This lets 
+people know this class adds in a new role type by taking in a string and inserting it into the sqlite database. 
+
+
+## Clean Code Rule #2 - Comments 
+In clean code, comments should be kept for extreme cases like explaining why a piece of code does something, never 
+how. Your code should be written in a way that is understandable to other developers and it should follow international 
+standards to achieve this. If your code requires lines and lines of comments to explain it's functionality then something is wrong.
+
+Example:
+```
+ private DatabaseManager databaseManager;
+        private SQLiteConnection connection;
+
+        public RoleTypeManager()
+        {
+            databaseManager = new DatabaseManager(); # connects to the base/main database manager class
+            connection = databaseManager.DBconn();
+            connection.CreateTable<RoleType>(); # creates new sqlite table 
+        }
+```
+
+In the above example you can see i have comments but only for explaining why i use these SQLiteConnection methods. This is because
+SQLite has many different packages that some developers might not be aware of. I don't have comments to explain simple stuff such
+as "This is a constructor", "This is me assigning an instance of a class". This would be unneeded as developers will be able to 
+understand these things as i have good meaningful names for my objects. 
+
+## Clean Code Rule #3 - long methods 
+Having long methods is bad coding practice because it often overcomplicates the method and makes it hard to understand what the 
+function of the method actually is. Typically methods should be a few lines of code that perform a single task. If you are 
+unable to achieve this then the method is doing too much. 
+
+Example:
+```
+ public void AddRole(string role)
+        {
+            var newRoleType = new RoleType { Role = role};
+            connection.Insert(newRoleType); # uses sqlite to insert new value
+        }
+
+        public void UpdateRole(int id, string newRole)
+        {
+            var roleToUpdate = connection.Table<RoleType>().FirstOrDefault(b => b.Id == id);
+            if (roleToUpdate != null)
+            {
+                roleToUpdate.Role = newRole;
+                connection.Update(roleToUpdate);
+            }
+
+        }
+```
+
+The above example demostrates that my code followed this clean code rule as i have two short methods that both handle two 
+different tasks. I could have made the add and update feature into one method but this would be bad as they should be kept 
+seperate.
+
+
+## Clean Code Rule #4/5 - Keep it simple (KISS)/Single Responsibilty Principle (SOLID)
+This clean code rule which is called KISS (Keep it simple stupid) is the practice of keeping code as simple as possible. 
+This means you don't have code that is not needed and everything is structured in the most simple format. This practice should 
+allow you to understand the code you've written without having to refer to comments post launch of the software. 
+
+The second clean code rule this also follows is the single responsiblty rule. This rule is that all methods/functions in a class
+should have a single task. The purpose of these methods is to give the application CRUD operations and the purpose of the class 
+is to contain all features of the role type table in the database. 
+
+Example: - The full code example at the start of the page refers to this practice. It has the methods it needs 
+(create, read, update and delete) and the abilty to access the SQLite database. This is all this class should do because it is
+the database manager class. It would not make sense if i added in the xaml content methods also in this class for the actual page.
+
+## Clean Code Rule #6 - Duplicated Code
+This final code rule is for when you create code that does the same operation but in a different location. This could be for an 
+add feature in your application but in different areas so the code is duplicated but with a different purpose. This practice 
+in itself isn't bad but it makes maintainability for the application extremely difficult. If the code needs changed in one area
+because of a bug every time it's duplicated it will also need fixed. 
+
+
+## Doxygen Generated Documentation 
+
+![Doxygen Page](images/Doxygen_Example_KG.png)
+
+
+Html for page generated:
+```
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Code Review - Doxygen KG: Class Hierarchy</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Code Review - Doxygen KG
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Class Hierarchy</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">This inheritance list is sorted roughly, but not completely, alphabetically:</div><div class="directory">
+<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><b>Application</b></td><td class="desc"></td></tr>
+<tr id="row_0_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_u_n_d_a_c___app_1_1_app.html" target="_self">UNDAC_App.App</a></td><td class="desc"></td></tr>
+<tr id="row_1_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="toggleFolder('1_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><b>ContentPage</b></td><td class="desc"></td></tr>
+<tr id="row_1_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_u_n_d_a_c___app_1_1_main_page.html" target="_self">UNDAC_App.MainPage</a></td><td class="desc"></td></tr>
+<tr id="row_1_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_u_n_d_a_c___app_1_1_role_types_page.html" target="_self">UNDAC_App.RoleTypesPage</a></td><td class="desc"></td></tr>
+<tr id="row_2_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_2_" class="arrow" onclick="toggleFolder('2_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><b>Shell</b></td><td class="desc"></td></tr>
+<tr id="row_2_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_u_n_d_a_c___app_1_1_app_shell.html" target="_self">UNDAC_App.AppShell</a></td><td class="desc"></td></tr>
+</table>
+</div><!-- directory -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
+```
