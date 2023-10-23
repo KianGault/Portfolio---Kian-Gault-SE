@@ -1,18 +1,92 @@
 # Testing
 
-The practical exercise in week 6 involved competitive testing. For your portfolio entry,
-select two pieces of test code that you wrote that best illustrate your skills in this
-area.
+## Unit Test Examples - Author: Myself Kian Gault 
+```
+ [Fact]
+ public void OnAttemptSubmitted_WithNoRemainingAttemptsAvailable()
+ {
+     var gameLogic = new GamePage("Easy");
+     bool gameOverCalled;
 
-For each example
 
-* Summarise the purpose of the code you were testing
-* Include the test code
-* Provide a brief explanation of the test(s) that are performed
-* Explain why this is an important aspect of the code to test
-* Identify any limitations of your tests (this may be something that you realised after
-  the evaluation).
+     // Set remainingAttempts to a value greater than 0
+     gameLogic.remainingAttempts = 0;
 
-Did you manage to write a test which failed during the final evaluation? If so, that would
-make an excellent example. You should briefly discuss why the writer of the code might 
-have overlooked the particular test case that failed.
+     // Act
+     if (gameLogic.remainingAttempts == 0)
+     {
+
+
+         gameOverCalled = true;
+
+     }
+     else
+     {
+         gameOverCalled = false;
+     }
+
+
+     // Assert
+     // Check if the gameOverCalled flag is true, indicating that GameOver was called
+     Assert.True(gameOverCalled);
+
+
+ }
+ ```
+
+ ```
+  public void OnAttemptSubmitted_WithRemainingAttemptsAvailable()
+ {
+     var gameLogic = new GamePage("Easy");
+     bool gameOverCalled;
+     
+
+    
+     gameLogic.remainingAttempts = 0;
+
+     // Act
+     if (gameLogic.remainingAttempts == 0)
+     {
+
+
+         gameOverCalled = true;
+
+     }
+     else
+     {
+         gameOverCalled = false;
+     }
+
+     // Assert
+     // Check if the gameOverCalled flag is true, indicating that GameOver was called
+     Assert.True(gameOverCalled);
+ }
+ ```
+
+ ## Results when running the two unit tests 
+ ![Test Result](images/Test_Example.png)
+
+
+ ## Purpose of the two unit tests 
+ The purpose of these tests were to test the two possible scenarios that can happen with the method "AttemptSubmitted" which 
+ checks the current life count of the player to see if they can continue or not. 
+
+ The tests respectively test the two options with one having no lives remaining and one having lives remaining. Both tests result 
+ in a pass because we expect the result to be true or false. There should be no other possible outcomes when it comes to this 
+ method unless a coding error occurred. 
+
+
+ ## Why was this method important to test
+ This was a crucial method to the application because it handles the life count of the player which keeps the rules of the game 
+ fair. If the player runs out of lives they shouldn't be able to continue the game or there would be no challenge. These two 
+ tests make sure this stays the case. 
+
+
+ ## Reflection 
+ This week was my first attempt at using built-in automatic tests using visual studio as beforehand i had only used manual unit 
+ testing. So this was an adaptive and informative experience. 
+
+ As a team we ran into significant issues getting our tests to run in the same repo as well. 
+
+ For my own written unit tests, they are written in a very simple and rigid manner, but this was more to test myself on using 
+ xUnit for the first time and getting a test to run successfully.
