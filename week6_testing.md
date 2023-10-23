@@ -42,7 +42,7 @@
      
 
     
-     gameLogic.remainingAttempts = 0;
+     gameLogic.remainingAttempts = 3;
 
      // Act
      if (gameLogic.remainingAttempts == 0)
