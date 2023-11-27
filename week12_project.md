@@ -13,6 +13,8 @@ user to add a description and date to each operation entry.
 I picked this easier issue for the final week so i could really focus on following up on the feedback i was given from the 
 previous code review. This was so i could demonstrate my skill to critique my own code and it's quality to better improve it.
 
+![MAUI Page](images/Week_12/screenshot1.png)
+
 
 ## code changes following last week's code review
 
@@ -95,6 +97,14 @@ This change makes the code more clean and concise in design and removes the dupl
     }
     
 ```
+
+## Receiving a code review
+
+![Receiving a code review](images/Week_12/getting_code_review.png)
+
+## Giving a code review
+
+![giving a code review](images/Week_12/giving_code_review.png)
 
 ## Reflection 
 To reflect on this final project week i think i have showed great skill and progression as the weeks went on with my coding 
